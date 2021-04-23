@@ -3,11 +3,20 @@ package com.sippulse.pet.entity;
 import java.io.Serializable;
 import java.time.LocalDateTime;
 
+import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToOne;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@AllArgsConstructor
+@NoArgsConstructor
+@Data
+@Entity
 public class Consulta implements Serializable {
 
 	/**

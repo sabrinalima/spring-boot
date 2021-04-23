@@ -29,8 +29,9 @@ public class PetServiceImpl implements PetService {
 		List<Consulta> consultas = new ArrayList<Consulta>();
 		consultas =  repositoryConsulta.findAll();
 		for (Consulta consulta : consultas) {
-			if(consulta.getCliente().getCpf().equals(cpf)) {
-				id = consulta.getCliente().getId(); 
+			
+			if(consulta.getPet().getCliente().getCpf().equals(cpf)) {
+				id = consulta.getPet().getCliente().getId(); 
 			}
 		}
 		return id;
